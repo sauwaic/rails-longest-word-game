@@ -1,0 +1,26 @@
+// Place all the styles related to the interface controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.full-page {
+  background-color: #E9E9E9;
+}
+
+
+.letter {
+  height: 80px;
+  border: 1px solid #D6D6D6;
+  border-radius: 8px;
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  p {
+    color: red;
+    margin: 0;
+  }
+
+}
+

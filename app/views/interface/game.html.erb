@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body class="full-page">
+  <br>
+  <br>
+  <div class="container content">
+    <div class="row">
+      <div class="col-xs-12">
+        <h4>Here are your letters:</h4>
+        <% @grid.each do |letter| %>
+        <div class="letter col-xs-3"><p><%= "#{letter}" %> </p></div>
+        <% end %>
+      </div>
+      <br>
+      <br>
+      <form action="/score">
+        <label for="attempt">Insert word</label>
+        <input type="text" name="attempt" placeholder="Insert word">
+        <input type="hidden" name="start_time" value="<%= @start_time %>">
+        <input type="hidden" name="grid" value="<%= @grid.join %>">
+        <input type="submit" value="Submit!">
+      </form>
+
+    </div>
+  </div>
+</body>
+</html>
